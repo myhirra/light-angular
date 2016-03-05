@@ -1,7 +1,9 @@
 class Ng {
 
-	this.$watchers = [];
-	this.$scope = {};
+	constructor(){
+		this.$watchers = [];
+		this.$scope = {};
+	}
 
 	$watch(expression, handler) {
 		if (!expression) {
@@ -23,11 +25,11 @@ class Ng {
 		});
 	}
 
-	detect() {
-
+	$detect() {
+		
 	}
 
-	digest() {
+	$digest() {
 		this.$watchers.forEach((watcher) => {
 			let newValue = this.$scope[watcher.expression];
 			let oldValue = watcher.oldValue;

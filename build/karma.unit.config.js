@@ -3,7 +3,7 @@ var base = require('./karma.base.config.js')
 
 module.exports = function (config) {
   config.set(assign(base, {
-    browsers: ['Chrome', 'Firefox', 'Safari'],
+    browsers: ['Chrome', 'Safari'],
     reporters: ['progress']
   }))
 }
