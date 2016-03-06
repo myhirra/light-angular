@@ -1,3 +1,5 @@
+'use strict';
+
 class Ng {
 
 	constructor(){
@@ -26,7 +28,7 @@ class Ng {
 	}
 
 	$detect() {
-		
+
 	}
 
 	$digest() {
@@ -41,4 +43,4 @@ class Ng {
 	}
 }
 
-export default Ng;
+window.ng = new Ng();
