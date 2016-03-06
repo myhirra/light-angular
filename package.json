@@ -17,12 +17,13 @@
   "bugs": "https://github.com/myhirra/light-angular/issues",
   "scripts": {
     "unit": "karma start build/karma.unit.config.js",
-    "dev": "webpack --config build/webpack.config.babel.js --progress --colors --watch"
+    "dev": "webpack --config build/webpack.config.babel.js --colors --watch"
   },
   "devDependencies": {
-    "babel-core": "^5.0.0",
-    "babel-loader": "^5.0.0",
-    "babel-runtime": "^6.1.18",
+    "babel-core": "^6.6.4",
+    "babel-loader": "^6.2.4",
+    "babel-runtime": "^5.8.0",
+    "babel-preset-es2015": "^6.0.0",
     "karma": "^0.13.8",
     "karma-chrome-launcher": "^0.2.0",
     "karma-coverage": "^0.5.0",

@@ -1,4 +1,4 @@
-var Ng = require('../src/index.js');
+import Ng from '../src/ng.js';
 
 describe("ng", function() {
 	it("watchers length add", function() {

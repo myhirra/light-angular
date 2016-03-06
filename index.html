@@ -5,6 +5,15 @@
 		<script type="text/javascript" src="/dist/light-angular.js"></script>
 	</head>
 	<body>
+		<div ng-app>
+			{{number1}}
+		</div>
 
+		<script type="text/javascript">
+			ng.init({
+				detect: 'interval'
+			});
+			ng.$scope.number1 = 1;
+		</script>
 	</body>
 </html>

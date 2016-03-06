@@ -16,10 +16,12 @@ const config = {
 		extensions: ['', '.js'],
 	},
 	module: {
-		loaders: [
-			{ test: /\.js?$/,loaders: ['babel'],include: `${__dirname}/../src/`,exclude: /node_modules/ },
-		]
-	},
+		loaders: [{
+			test: /\.js$/,
+			exclude: /node_modules/,
+          	loader: 'babel'
+		}]
+  	},
 	devtool: 'source-map',
 	cache: false,
 	plugins: [
@@ -30,7 +32,8 @@ const config = {
 new WebpackDevServer(webpack(config), {
   publicPath: '/',
   hot: true,
-  historyApiFallback: true
+  historyApiFallback: true,
+  noInfo: true
 }).listen(3000, 'localhost', function (err, result) {
   if (err) {
     console.log(err);
